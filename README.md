@@ -50,4 +50,30 @@ _(А если честно, то просто писал для себя, что
 ```
 git init
 ```
-<br />
+<br /><br />
+
+
+### git clone
+`git clone <URL>` – клонирует удалённый репозиторий на компьютер.
+```
+git clone https://github.com/user/repo.git  
+git clone git@github.com:user/repo.git  # через SSH 
+```
+Для приватных репозиториев:
+```
+git clone https://<ТОКЕН>@github.com/user/repo.git  
+```
+<br /><br />
+
+
+
+
+
+
+
+
+
+
+
+
+
