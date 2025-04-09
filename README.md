@@ -185,15 +185,64 @@ git remote remove <имя>                                 # удаление у
 ```
 <br />
 
-
-
- 
-### git push / git pull
-Работа с удалённым репозиторием:
-
-git push origin main    # отправить изменения  
-git pull               # получить изменения с сервера  
+### git push
+`git push` - команда для отправки локальных изменений в удалённый репозиторий
+```
+git push                             # отправить изменения
+git push origin main                 # явное указание репозитория и ветки
+git push origin feature:new-feature  # отправка в ветку с другим именем
+git push --all origin                # отправка всех локальных веток
+git push origin --delete old-branch  # удаление удалённой ветки
+```
 <br />
+
+### git pull
+`git pull` - команда для получения изменений из удалённого репозитория и их автоматического слияния с локальной веткой
+```
+git pull                            # получить изменения с сервера  
+git pull origin main                # явное указание репозитория и ветки
+git pull --rebase origin main       # использование rebase вместо merge
+git pull --no-commit origin feature # получение изменений без автоматического коммита
+git pull --ff-only origin main      # безопасное обновление (только fast-forward)
+```
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### git fetch
+`git fetch`
+```
+  
+``` 
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
